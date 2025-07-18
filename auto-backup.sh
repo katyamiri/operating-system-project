@@ -20,3 +20,7 @@ mkdir "$TMP_DIR"
 while read FILE; do
     cp --parents "$FILE" "$TMP_DIR"
 done < backup.conf
+
+tar -czf "$DEST_DIR/$BACKUP_NAME.tar.gz" -C /tmp "$BACKUP_NAME"
+
+
