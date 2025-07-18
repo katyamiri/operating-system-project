@@ -28,7 +28,7 @@ rm -rf "$TMP_DIR"
 LOG_FILE="backup.log"
 echo "[$(date)] Backup $BACKUP_NAME created at $DEST_DIR" >> "$LOG_FILE"
 
-
+find "$DEST_DIR" -name "*.tar.gz" -mtime +7 -exec rm {} \;
 
 
 
