@@ -24,3 +24,11 @@ done < backup.conf
 tar -czf "$DEST_DIR/$BACKUP_NAME.tar.gz" -C /tmp "$BACKUP_NAME"
 
 rm -rf "$TMP_DIR"
+
+LOG_FILE="backup.log"
+echo "[$(date)] Backup $BACKUP_NAME created at $DEST_DIR" >> "$LOG_FILE"
+
+
+
+
+
