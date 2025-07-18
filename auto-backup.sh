@@ -23,4 +23,4 @@ done < backup.conf
 
 tar -czf "$DEST_DIR/$BACKUP_NAME.tar.gz" -C /tmp "$BACKUP_NAME"
 
-
+rm -rf "$TMP_DIR"
