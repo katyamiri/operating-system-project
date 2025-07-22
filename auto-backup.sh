@@ -49,14 +49,6 @@ if [[ "$4" == "--dry-run" ]]; then
     cat backup.conf
     echo "[DRY-RUN] would create archive: $DEST_DIR/$BACKUP_NAME.tar.gz"
     exit 0
-fi    
-    
-
-
-
-
-
-
-
+fi
 
 
